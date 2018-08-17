@@ -9,23 +9,33 @@
   }
 }
 
-.cards {
-  border: 1px green solid;
+#all-cocktails {
+  color: white;
+  font-weight: 800;
 }
 
 .card {
-  border: 1px rgb(220, 220, 220) solid;
-  box-shadow: 2px;
+  box-shadow: 3px 3px 3px 0px rgba(150,150,150,1);
   margin: 20px;
 }
 
 .flat-card-image {
-  height: 230px;
+  height: 250px;
   background-position: center;
   background-size: cover;
+  border-radius: 3px;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+  }
 }
 
 .text {
   text-align: center;
-  padding: 15px 15px;
+  padding: 5px 5px;
+  position: relative;
+  color: white;
+  font-weight: 800;
 }
