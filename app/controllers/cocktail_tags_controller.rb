@@ -13,7 +13,7 @@ class CocktailTagsController < ApplicationController
     if @tags.empty?
       render :new
     else
-      redirect_to cocktail_path(@cocktail)
+      redirect_to cocktails_path
     end
   end
 
