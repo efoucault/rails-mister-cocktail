@@ -44,6 +44,7 @@
   background-color: rgb(240, 240, 240);
   padding: 10px;
   border-radius: 0px 0px 4px 4px;
+  height: 80px;
   li {
     padding: 0px 10px;
     background-color: #237CDF;
@@ -52,4 +53,8 @@
     color: white;
     font-weight: 800;
   }
+}
+
+.typed {
+  height: 80px;
 }
