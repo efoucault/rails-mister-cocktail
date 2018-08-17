@@ -11,9 +11,13 @@
 
   <body>
     <div class="navbar-wagon">
-      <h5>Soirée cocktail.com</h5>
-      <%= link_to "New cocktail", new_cocktail_path, class: "btn btn-success btn-navbar" %>
-      <%= link_to "All cocktails", cocktails_path, class: "btn btn-success btn-navbar" %>
+      <%= link_to "Soirée cocktail.com", cocktails_path %>
+      <div class="form-flex">
+        <form action="/cocktails" method="get" class="form-inline">
+          <input type="text" name="query" placeholder="search" class="form-control">
+          <input type="submit" class= "btn btn-navbar" >
+        </form>
+      </div>
     </div>
     <%= yield %>
      <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
