@@ -1,5 +1,11 @@
-#wrapper-index {
+.wrapper-index {
   background-position: center;
   background-size: cover;
   height: calc(100vh - 70px);
+}
+
+#banner-typed-text {
+  padding-left: 30px;
+  color: white;
+  font-weight: 800;
 }
