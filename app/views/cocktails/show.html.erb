@@ -4,16 +4,18 @@
 </div>
 <div class="wrapper">
   <div class="container">
-    <div id="show-container">
-      <div class="doses">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
         <h2>Doses</h2>
         <ul>
          <% @cocktail.doses.each do |dose| %>
-          <li><%= "#{dose.ingredient.name.upcase}: #{dose.description} " %> <%= link_to "Delete dose", dose_path(dose), method: :delete %> </li>
+          <li><%= "#{dose.ingredient.name.upcase}: #{dose.description} " %> <%= link_to dose_path(dose), method: :delete do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %></li>
          <% end %>
         </ul>
       </div>
-      <div class="render">
+      <div class="col-xs-12 col-md-6">
         <%= render "doses/form" %>
       </div>
     </div>

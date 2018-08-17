@@ -3,32 +3,30 @@
 }
 
 #show-container {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  // justify-content: space-around;
 }
 
 .render {
-  width: 40%;
-  margin-right: 15px;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
-  margin: 10px;
   padding: 10px;
   opacity: 0.8;
+  margin: 5px;
+  width: 45%;
 }
 
 .doses {
-  width: 60%;
+  width: 45%;
+  margin: 5px;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
-  margin: 10px;
   padding: 10px;
   opacity: 0.8;
 }
 
 .review {
   border-radius: 4px;
-  background-color: rgb(255, 255, 255);
   margin: 10px;
   padding: 10px;
   opacity: 0.8;
