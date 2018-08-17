@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :cocktails do
     resources :doses, only: [ :new, :create ]
     resources :reviews, only: [ :new, :create ]
+    resources :cocktail_tags, only: [ :new, :create ]
   end
   resources :doses, only: [ :index, :destroy]
 end
