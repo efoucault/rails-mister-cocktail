@@ -1,0 +1,5 @@
+  <h2>New review</h2>
+  <%= simple_form_for [@cocktail, Review.new] do |f| %>
+    <%= f.input :content, as: :text %>
+    <%= f.submit "add a review", class: "btn btn-success" %>
+  <% end %>

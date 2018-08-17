@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>All doses</h1>
+  <ul>
+    <% @doses.each do |dose| %>
+        <li><%= "#{dose.id}. #{dose.description}" %></li>
+    <% end %>
+  </ul>
+</div>

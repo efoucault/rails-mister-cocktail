@@ -1,0 +1,40 @@
+.wrapper {
+  background-color: rgb(250, 250, 250);
+}
+
+#show-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.render {
+  width: 40%;
+  margin-right: 15px;
+  border-radius: 4px;
+  background-color: rgb(240, 240, 240);
+  margin: 10px;
+  padding: 10px;
+}
+
+.doses {
+  width: 60%;
+  border-radius: 4px;
+  background-color: rgb(240, 240, 240);
+  margin: 10px;
+  padding: 10px;
+}
+
+.review {
+  border-radius: 4px;
+  background-color: rgb(240, 240, 240);
+  margin: 10px;
+  padding: 10px;
+  ul {
+    list-style: none;
+  }
+  li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px rgb(200, 200, 200) solid;
+  }
+}

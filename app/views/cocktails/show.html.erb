@@ -1,0 +1,30 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= @cocktail.picture %>');")">
+    <%= link_to "Edit cocktail", edit_cocktail_path(@cocktail), class: "btn btn-success btn-custo" %>
+    <h1>Cocktail: <%= @cocktail.name %></h1></br>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div id="show-container">
+      <div class="doses">
+        <h2>Doses</h2>
+        <ul>
+         <% @cocktail.doses.each do |dose| %>
+          <li><%= "#{dose.ingredient.name.upcase}: #{dose.description} " %> <%= link_to "Delete dose", dose_path(dose), method: :delete %> </li>
+         <% end %>
+        </ul>
+      </div>
+      <div class="render">
+        <%= render "doses/form" %>
+      </div>
+    </div>
+    <div class="review">
+      <%= render "reviews/form" %>
+      <h2>Reviews:</h2>
+      <ul>
+       <% @cocktail.reviews.each do |review| %>
+        <li><strong><%= "#{review.created_at.strftime("%F %T")}" %></strong> <%= "- #{review.content}" %></li>
+       <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

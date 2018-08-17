@@ -1,0 +1,31 @@
+.cards a {
+  text-decoration: none;
+  color: #68A100;
+  font-weight: 800;
+  :hover {
+  text-decoration: none;
+  color: #68A100;
+  font-weight: 1000;
+  }
+}
+
+.cards {
+  border: 1px green solid;
+}
+
+.card {
+  border: 1px rgb(220, 220, 220) solid;
+  box-shadow: 2px;
+  margin: 20px;
+}
+
+.flat-card-image {
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  text-align: center;
+  padding: 15px 15px;
+}
