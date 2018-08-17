@@ -6,7 +6,7 @@
           <% @cocktails.each do |cocktail| %>
             <div class="col-xs-4">
               <div class="card">
-                  <div class="flat-card-image" style="background-image: url('<%= cocktail.picture %>')"></div>
+                  <div class="flat-card-image" style="background-image: url('<%= cocktail.photo %>')"></div>
                   <div class="text"><%= link_to "#{cocktail.id}. #{cocktail.name}", cocktail_path(cocktail) %></div>
               </div>
             </div>
